@@ -1,0 +1,41 @@
+<div style="text-align:center; padding: 30px;">
+  <h1 style="font-size: 3rem; font-weight: bold; color: #eaeaea;">trackside fnq</h1>
+  <p style="font-size: 1.25rem; color: #fff; text-align: center; margin-bottom: 20px;">
+    far north qld based motorsport photography
+  </p>
+
+  <div class="carousel" style="max-width: 100%; margin: 20px auto;">
+    <img id="carousel-img" src="https://photos.tracksidefnq.com.au/_data/i/upload/2025/07/13/20250713225528-daca0e4f-xl.jpg"
+         style="width: 100%; max-height: 70vh; object-fit: contain; display: block; border-radius: 10px;">
+  </div>
+
+  <a href="/index.php?/page/book" style="display: inline-block; background-color: #00e6ac; color: #111;
+     padding: 14px 28px; margin-top: 15px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 1rem;">
+     book your photoset
+  </a>
+
+  <div style="margin-top: 2rem; font-size: 0.9rem; color: #aaa;">
+    <a href="/index.php?/page/ToS" style="color: #c98aff; text-decoration: none; margin: 0 10px;">terms</a> |
+    <a href="/index.php?/page/Privacy" style="color: #c98aff; text-decoration: none; margin: 0 10px;">privacy</a> |
+    <a href="https://www.facebook.com/tracksidefnq" target="_blank" style="color: #c98aff; text-decoration: none; margin: 0 10px;">facebook</a> |
+    <a href="https://www.instagram.com/tracksidefnq" target="_blank" style="color: #c98aff; text-decoration: none; margin: 0 10px;">instagram</a>
+  </div>
+</div>
+
+<script>
+  const images = [
+    "https://photos.tracksidefnq.com.au/_data/i/upload/2025/07/13/20250713225528-daca0e4f-xl.jpg",
+    "https://photos.tracksidefnq.com.au/_data/i/upload/2025/07/13/20250713225845-46789a6f-xl.jpg",
+    "https://photos.tracksidefnq.com.au/_data/i/upload/2025/07/14/20250714212629-f89c4e57-xl.jpg",
+    "https://photos.tracksidefnq.com.au/_data/i/upload/2025/07/13/20250713225732-e728fa06-xl.jpg",
+    "https://photos.tracksidefnq.com.au/_data/i/upload/2025/07/14/20250714212628-29b8fca7-xl.jpg"
+  ];
+
+  let index = 0;
+  const imgElement = document.getElementById("carousel-img");
+
+  setInterval(() => {
+    index = (index + 1) % images.length;
+    imgElement.src = images[index];
+  }, 4000); // every 4 seconds
+</script>
